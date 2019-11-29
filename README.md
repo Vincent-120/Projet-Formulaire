@@ -87,4 +87,4 @@ Tous les champs sont obligatoires, sauf le sujet (dans ce cas, valeur = "Autre")
 - Acceuille : Présentation du site
 - Produit: Affichage des produit disponible
 - Formulaire
--Framwork utilisé : Bootstrap
+- Framwork utilisé : Bootstrap
