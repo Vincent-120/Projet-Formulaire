@@ -4,3 +4,16 @@ body{
     padding: 0px;
     background-image: linear-gradient(to bottom, #15c5bd, #188cac, #425576, #332936, #000000);
 }
+
+.anim-logo{
+    position: relative;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-delay: 0s;
+
+}
+
+@-webkit-keyframes logo {
+    0%   { left:0px; top:0px;}
+    100% { left:0px; top:300px;}
+  }
