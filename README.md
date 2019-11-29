@@ -84,8 +84,7 @@ Tous les champs sont obligatoires, sauf le sujet (dans ce cas, valeur = "Autre")
 - Validation: champs obligatoires + Email valide
 - Envoi + Feedback
 # Mise en place du projet.
- -Acceuille : Présentation du site
- -Produit: Affichage des produit disponible
- -Formulaire
- -Framwork utilisé : Bootstrap
-  
+- Acceuille : Présentation du site
+- Produit: Affichage des produit disponible
+- Formulaire
+-Framwork utilisé : Bootstrap
