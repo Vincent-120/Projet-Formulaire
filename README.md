@@ -88,3 +88,4 @@ Tous les champs sont obligatoires, sauf le sujet (dans ce cas, valeur = "Autre")
 - Produit: Affichage des produit disponible
 - Formulaire
 - Framwork utilisé : Bootstrap
+- Mettre un bar pour introduire l'email permettant de recevoir les actualiter dans ca boite
