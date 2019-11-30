@@ -4,3 +4,23 @@ body{
     padding: 0px;
     background-image: linear-gradient(to bottom, #15c5bd, #188cac, #425576, #332936, #000000);
 }
+/*annimation pulse start here*/
+/*.img {
+    animation: pulse 2s infinite;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+@-webkit-keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(44, 55, 204, 0.493);
+    }
+    70% {
+        box-shadow: 0 0 0 25px rgba(44,55,204, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(44,55,204, 0);
+    }
+  }
+*/
+/*annimation pulse end here*/

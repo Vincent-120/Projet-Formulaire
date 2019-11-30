@@ -1,0 +1,51 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5ffbf1), color-stop(#53f0ea), color-stop(#47e6e3), color-stop(#3adbdc), color-stop(#2cd1d5), color-stop(#1eb9cc), color-stop(#27a1bf), color-stop(#358aad), color-stop(#486183), color-stop(#423d53), color-stop(#292028), to(#000000));
+  background-image: linear-gradient(to bottom, #5ffbf1, #53f0ea, #47e6e3, #3adbdc, #2cd1d5, #1eb9cc, #27a1bf, #358aad, #486183, #423d53, #292028, #000000);
+}
+
+body .titre {
+  padding-top: 5vw;
+}
+
+body .produit {
+  height: 150px;
+  width: 100px;
+  padding-top: 10vw;
+  padding-right: 5vw;
+}
+
+body .who {
+  width: 100px;
+  padding-top: 10vw;
+  padding-left: 5vw;
+}
+
+body .who .border {
+  border: 1px solid black;
+}
+
+body .info {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+body .box1 {
+  padding-top: 20vw;
+}
+
+body .titre1 {
+  padding-bottom: 5vw;
+}
+
+body .imgProduit img {
+  padding-top: 3vw;
+  height: 200px;
+  width: 150px;
+}
+
+body .formulaire {
+  padding-top: 10vw;
+}
+/*# sourceMappingURL=style.css.map */
