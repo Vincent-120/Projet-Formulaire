@@ -5,47 +5,50 @@ body {
   background-image: linear-gradient(to bottom, #5ffbf1, #53f0ea, #47e6e3, #3adbdc, #2cd1d5, #1eb9cc, #27a1bf, #358aad, #486183, #423d53, #292028, #000000);
 }
 
-body .titre {
+.titre {
   padding-top: 5vw;
 }
 
-body .produit {
-  height: 150px;
-  width: 100px;
+.produit {
+  width: 150px;
   padding-top: 10vw;
   padding-right: 5vw;
 }
 
-body .who {
-  width: 100px;
+.who {
+  width: 150px;
   padding-top: 10vw;
   padding-left: 5vw;
 }
 
-body .who .border {
+.who a {
+  text-decoration: none;
+}
+
+.who .border {
   border: 1px solid black;
 }
 
-body .info {
+.info {
   padding-left: 15vw;
   padding-right: 15vw;
 }
 
-body .box1 {
+.box1 {
   padding-top: 20vw;
 }
 
-body .titre1 {
+.titre1 {
   padding-bottom: 5vw;
 }
 
-body .imgProduit img {
+.imgProduit img {
   padding-top: 3vw;
   height: 200px;
   width: 150px;
 }
 
-body .formulaire {
+.formulaire {
   padding-top: 10vw;
 }
 /*# sourceMappingURL=style.css.map */

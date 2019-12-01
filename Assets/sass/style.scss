@@ -2,39 +2,41 @@ body{
     margin: 0px;
     padding: 0px;
     background-image: linear-gradient(to bottom, #5ffbf1, #53f0ea, #47e6e3, #3adbdc, #2cd1d5, #1eb9cc, #27a1bf, #358aad, #486183, #423d53, #292028, #000000);
-    .titre{
-        padding-top:5vw;
+}
+.titre{
+    padding-top:5vw;
+}
+.produit{
+    width: 150px;
+    padding-top: 10vw;
+    padding-right: 5vw;
+}
+.who{
+    width: 150px;
+    padding-top: 10vw;
+    padding-left: 5vw;
+    a{
+        text-decoration: none;
     }
-    .produit{
-        height: 150px;
-        width: 100px;
-        padding-top: 10vw;
-        padding-right: 5vw;
+    .border{
+        border: 1px solid black;
     }
-    .who{
-        width: 100px;
-        padding-top: 10vw;
-        padding-left: 5vw;
-         .border{
-            border: 1px solid black;
-         }
-    }
-    .info{
-        padding-left: 15vw;
-        padding-right: 15vw;
-    }
-    .box1{
-        padding-top: 20vw;
-    }
-    .titre1{
-        padding-bottom: 5vw;;
-    }
-    .imgProduit img{
-        padding-top: 3vw;
-        height: 200px;
-        width: 150px;
-    }
-    .formulaire{
-        padding-top: 10vw;
-    }
+}
+.info{
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+.box1{
+    padding-top: 20vw;
+}
+.titre1{
+    padding-bottom: 5vw;;
+}
+.imgProduit img{
+    padding-top: 3vw;
+    height: 200px;
+    width: 150px;
+}
+.formulaire{
+    padding-top: 10vw;
 }
