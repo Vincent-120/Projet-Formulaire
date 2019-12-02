@@ -2,8 +2,6 @@ body {
   margin: 0px;
   padding: 0px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5ffbf1), color-stop(#53f0ea), color-stop(#47e6e3), color-stop(#3adbdc), color-stop(#2cd1d5), color-stop(#1eb9cc), color-stop(#27a1bf), color-stop(#358aad), color-stop(#486183), color-stop(#423d53), color-stop(#292028), to(#000000));
-  background-image: -webkit-linear-gradient(top, #5ffbf1, #53f0ea, #47e6e3, #3adbdc, #2cd1d5, #1eb9cc, #27a1bf, #358aad, #486183, #423d53, #292028, #000000);
-  background-image: -o-linear-gradient(top, #5ffbf1, #53f0ea, #47e6e3, #3adbdc, #2cd1d5, #1eb9cc, #27a1bf, #358aad, #486183, #423d53, #292028, #000000);
   background-image: linear-gradient(to bottom, #5ffbf1, #53f0ea, #47e6e3, #3adbdc, #2cd1d5, #1eb9cc, #27a1bf, #358aad, #486183, #423d53, #292028, #000000);
 }
 
@@ -30,7 +28,6 @@ body {
 .who .border {
   border: 1px solid black;
   background-image: grey;
-  opacity: 20%;
 }
 
 .info {
@@ -84,3 +81,4 @@ body {
   -o-transition: 0.1s;
   transition: 0.1s;
 }
+/*# sourceMappingURL=style.css.map */
