@@ -1,6 +1,4 @@
 body {
-  margin: 0px;
-  padding: 0px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5ffbf1), color-stop(#53f0ea), color-stop(#47e6e3), color-stop(#3adbdc), color-stop(#2cd1d5), color-stop(#1eb9cc), color-stop(#27a1bf), color-stop(#358aad), color-stop(#486183), color-stop(#423d53), color-stop(#292028), to(#000000));
   background-image: linear-gradient(to bottom, #5ffbf1, #53f0ea, #47e6e3, #3adbdc, #2cd1d5, #1eb9cc, #27a1bf, #358aad, #486183, #423d53, #292028, #000000);
 }
@@ -23,11 +21,12 @@ body {
 
 .who a {
   text-decoration: none;
+  color: white;
 }
 
 .who .border {
   border: 1px solid black;
-  background-image: grey;
+  background-color: grey alpha(opacity=50);
 }
 
 .info {
@@ -39,14 +38,21 @@ body {
   padding-top: 20vw;
 }
 
-.titre1 {
+.box1 .titre1 {
   padding-bottom: 5vw;
 }
 
-.imgProduit img {
-  padding-top: 3vw;
+.box1 .imgProduit img {
+  padding: 2vw;
   height: 200px;
-  width: 150px;
+  width: 200px;
+  background-color: white;
+  -webkit-box-shadow: black 10px 10px 5px;
+          box-shadow: black 10px 10px 5px;
+}
+
+p {
+  padding-top: 2vw;
 }
 
 .formulaire {

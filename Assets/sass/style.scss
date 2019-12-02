@@ -1,6 +1,4 @@
 body{
-    margin: 0px;
-    padding: 0px;
     background-image: linear-gradient(to bottom, #5ffbf1, #53f0ea, #47e6e3, #3adbdc, #2cd1d5, #1eb9cc, #27a1bf, #358aad, #486183, #423d53, #292028, #000000);
 }
 .titre{
@@ -17,10 +15,11 @@ body{
     padding-left: 5vw;
     a{
         text-decoration: none;
+        color: white;
     }
     .border{
         border: 1px solid black;
-        background-image: grey;
+        background-color: grey alpha(opacity=50);
     }
 }
 .info{
@@ -29,15 +28,21 @@ body{
 }
 .box1{
     padding-top: 20vw;
-}
-.titre1{
+
+    .titre1{
     padding-bottom: 5vw;;
-}
-.imgProduit img{
-    padding-top: 3vw;
+    }
+    .imgProduit img{
+    padding: 2vw;
     height: 200px;
-    width: 150px;
+    width: 200px;
+    background-color: white;
+    box-shadow: black 10px 10px 5px;
+    }
 }
+p{
+    padding-top: 2vw;
+    }
 .formulaire{
     padding-top: 10vw;
 }
