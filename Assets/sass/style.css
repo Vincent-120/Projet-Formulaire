@@ -27,6 +27,8 @@ body {
 
 .who .border {
   border: 1px solid black;
+  background-image: grey;
+  opacity: 20%;
 }
 
 .info {
