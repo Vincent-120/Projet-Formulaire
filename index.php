@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/php/formulaire.php">
     <title>Hackers Poulette</title>
 </head>
 <body>
@@ -77,10 +78,72 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="formulaire col-md-12 col-sm-12 text-center text-light">
-                <h1>Besoin de reponse a vos question ? voici un formulaire</h1>
+       
+           <div class="formulaire col-md-3 "></div>
+            <div class="formulaire col-md-6 col-sm-12 text-center align-item-center">
+             <form method="post" action="formulaire.php">
+ 
+                         
+
+                <h1>Formulaire de contacte :</h1>
+                <!---<div id="tv" >--->
+                    <div class="col-sm-12 col-sm-offset-4">
+                        <div class="well" style="margin-top: 10%;">
+                        
+                        <form role="form" id="contactForm" data-toggle="validator" class="shake">
+                                <div class="checkbox">
+                                        <div class="form-group col-sm-6"></div>
+                                            <label for="genre" class="h4">sexe:</label>
+                                            <label class="checkbox-inline" class="form-control" id="homme" placeholder="check" required data-error="NEW ERROR MESSAGE"><input type="checkbox" value="homme">homme</label>
+                                            <label class="checkbox-inline" class="form-control" id="femme" placeholder="check" required data-error="NEW ERROR MESSAGE"><input type="checkbox" value="femme">femme</label>
+                                          
+                                        </div>
+                                </div>
+
+                            <div class="row">
+                                
+                                <div class="form-group col-sm-6">
+                                    <label for="name" class="h4">Nom</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Entrez votre nom" required data-error="NEW ERROR MESSAGE">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                
+                                <div class="form-group col-sm-6">
+                                        <label for="prénom" class="h4">prénom</label>
+                                        <input type="text" class="form-control" id="prénom" placeholder="Entrez votre prénom" required data-error="NEW ERROR MESSAGE">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                
+                                <div class="form-group col-sm-6">
+                                    <label for="email" class="h4">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse email" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                        <label for="pays" class="h4">pays</label>
+                                        <input type="text" class="form-control" id="pays" placeholder="pays" required>
+                                        <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="h4 ">Message</label>
+                                <textarea id="message" class="form-control" rows="5" placeholder="Entrez votre message" required></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        </form>
+                        
+                    </div>
+
+            </div>
+
+                <div class="formulaire col-md-3 "></div>
                 
-                
+              
             </div>
         </div>
     </div>
@@ -91,3 +154,50 @@
     
 </body>
 </html>
+
+<?php
+$errorMSG = "";
+// NAME
+if (empty($_POST["name"])) {
+    $errorMSG = "Votre nom est requis";
+} else {
+    $name = $_POST["name"];
+}
+// EMAIL
+if (empty($_POST["email"])) {
+    $errorMSG .= "Votre email est requis ";
+} else {
+    $email = $_POST["email"];
+}
+// MESSAGE
+if (empty($_POST["message"])) {
+    $errorMSG .= "Message is required ";
+} else {
+    $message = $_POST["message"];
+}
+$EmailTo = "quendepa@gmail.com";
+$Subject = "New Message Received";
+// prepare email body text
+$Body = "";
+$Body .= "Name: ";
+$Body .= $name;
+$Body .= "\n";
+$Body .= "Email: ";
+$Body .= $email;
+$Body .= "\n";
+$Body .= "Message: ";
+$Body .= $message;
+$Body .= "\n";
+// send email
+$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+// redirect to success page
+if ($success && $errorMSG == ""){
+   echo "success";
+}else{
+    if($errorMSG == ""){
+        echo "Something went wrong :(";
+    } else {
+        echo $errorMSG;
+    }
+}
+?>
