@@ -123,17 +123,14 @@
                                 <option value="J'ai une question concernant vos produits">J'ai une question concernant vos produits</option>
                                 <option value="J'ai une question concernant votre site">J'ai une question concernant votre site</option>
                                 <option value="J'ai une question pour vous ennuyer">J'ai une question pour vous ennuyer</option>
-                    
-                            </select>
-
+                        </select>
                                 <div class="checkbox">
                                         <div class="form-group col-sm-6"></div>
                                             
                                             <label>Sexe : </label>
-                                            <input type="radio" name="sexe" value="Homme"> Homme <input type="radio" name="sexe" value="Femme"> Femme
+                                            <input type="radio" required name="sexe" value="Homme"> Homme <input type="radio" required name="sexe" value="Femme"> Femme
                                         </div>
                                 </div>
-
                             <div class="row">
                                 
                                 <div class="form-group col-sm-6">
@@ -141,19 +138,16 @@
                                     <input type="text" class="form-control" id="name" name="nom" placeholder="Entrez votre nom" required data-error="">
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                
                                 <div class="form-group col-sm-6">
-                                        <label for="prenom" class="h4" >Prénom</label>
-                                        <input type="text" name="prenom" class="form-control" id="prenom" placeholder="Entrez votre prénom" required data-error="NEW ERROR MESSAGE">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                
+                                    <label for="prenom" class="h4" >Prénom</label>
+                                    <input type="text" name="prenom" class="form-control" id="prenom" placeholder="Entrez votre prénom" required data-error="NEW ERROR MESSAGE">
+                                    <div class="help-block with-errors"></div>
+                                </div>
                                 <div class="form-group col-sm-6">
                                     <label for="email" class="h4" >Email</label>
                                     <input type="email" name="email" class="form-control" id="email" placeholder="Entrez votre adresse email" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
-
                                 <div class="form-group col-sm-6">
                                         <label for="pays" class="h4" >Pays</label>
                                         <input name="pays" type="text" class="form-control" id="pays" placeholder="pays" required>
