@@ -86,11 +86,13 @@
                          
 
                 <h1>Formulaire de contacte :</h1>
-                <!---<div id="tv" >--->
-                    <div class="col-sm-12 col-sm-offset-4">
+                <div id="tv" >
+                    <div class="col-sm-12 col-sm-offset-4" id="form">
                         <div class="well" style="margin-top: 10%;">
                         
+                        
                         <form role="form" id="contactForm" data-toggle="validator" class="shake" method="post" action="index.php">
+                        
                                 <div class="checkbox">
                                         <div class="form-group col-sm-6"></div>
                                             
