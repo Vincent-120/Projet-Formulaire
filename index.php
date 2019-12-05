@@ -99,7 +99,16 @@
                         
                         
                         <form role="form" id="contactForm" data-toggle="validator" class="shake" method="post" action="index.php">
-                        
+                               
+                           <label for="sujet">Sujet du message</label><br />
+                           <div class="form-group col-sm-6"></div>
+                             <select name="sujet" id="le_nom">
+                                <option value="ta_valeur">J'ai une question concernant vos produits</option>
+                                <option value="ta_valeur">J'ai une question concernant votre site</option>
+                                <option value="ta_valeur">J'ai une question poour vous ennuyer</option>
+                               
+                             </select>
+
                                 <div class="checkbox">
                                         <div class="form-group col-sm-6"></div>
                                             
@@ -163,13 +172,23 @@
 <?php
 
 $nom="";
+$prenom="";
+$email="";
+
+
 $errorMSG = "";
+// question
+if (empty($_POST["sujet"])) {
+    $errorMSG .= "Veuillez entrer votre sexe ";
+} else {
+    $sujet = $_POST["sujet"];
+}
 
 // sexe
 if (empty($_POST["sexe"])) {
     $errorMSG .= "Veuillez entrer votre sexe ";
 } else {
-    $email = $_POST["sexe"];
+    $sexe = $_POST["sexe"];
 }
 
 // nom
@@ -182,7 +201,7 @@ if (empty($_POST["nom"])) {
 if (empty($_POST["prenom"])) {
     $errorMSG .= "Veuillez insérer votre prenom";
 } else {
-    $message = $_POST["prenom"];
+    $prenom = $_POST["prenom"];
 }
 
 // EMAIL
@@ -196,7 +215,7 @@ if (empty($_POST["email"])) {
 if (empty($_POST["pays"])) {
     $errorMSG .= "Veuillez insérer votre pays ";
 } else {
-    $email = $_POST["pays"];
+    $pays = $_POST["pays"];
 }
 
 // MESSAGE
