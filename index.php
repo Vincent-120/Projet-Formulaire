@@ -122,7 +122,16 @@
                         
                         
                         <form role="form" id="contactForm" data-toggle="validator" class="shake" method="post" action="index.php">
-                        
+                               
+                           <label for="sujet">Sujet du message</label><br />
+                           <div class="form-group col-sm-6"></div>
+                             <select name="sujet" id="le_nom">
+                                <option value="ta_valeur">J'ai une question concernant vos produits</option>
+                                <option value="ta_valeur">J'ai une question concernant votre site</option>
+                                <option value="ta_valeur">J'ai une question poour vous ennuyer</option>
+                               
+                             </select>
+
                                 <div class="checkbox">
                                         <div class="form-group col-sm-6"></div>
                                             
@@ -188,8 +197,19 @@
 $nom="";
 $prenom="";
 $email="";
+<<<<<<< HEAD
 $sexe="";
+=======
+
+
+>>>>>>> 9a444c8b3c0e53da95de49f7e89a885f817b8481
 $errorMSG = "";
+// question
+if (empty($_POST["sujet"])) {
+    $errorMSG .= "Veuillez entrer votre sexe ";
+} else {
+    $sujet = $_POST["sujet"];
+}
 
 // sexe
 if (empty($_POST["sexe"])) {
@@ -238,6 +258,9 @@ $EmailTo = "quendepa@gmail.com";
 $Subject = "New Message Received";
 // prepare email body text
 $Body = "";
+$Body .= "Sujet: ";
+$Body .= $sujet;
+$Body .= "\n";
 $Body .= "Nom: ";
 $Body .= $nom;
 $Body .= "\n";
