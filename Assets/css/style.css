@@ -102,7 +102,7 @@ header nav a {
 #tv {
   width: 900px;
   height: 650px;
-  background: white;
+  background-image: radial-gradient(circle, #15c5bd, #1dc8bb, #26cbb9, #2ecdb7, #36d0b5, #40d5c8, #50dad9, #65dfe7, #98e5fd, #c8ebff, #ebf3ff, #ffffff);
   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
   -webkit-box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
