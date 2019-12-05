@@ -110,10 +110,6 @@
            <div class="col-md-2 "></div>
             <form id="contacte"method="post" action="index.php" class="formulaire col-md-10 col-sm-12 text-center align-item-center">
                 <h1>Formulaire de contacte :</h1>
-<<<<<<< HEAD
-
-=======
->>>>>>> d21ecf1c933c5d57a0e047b9bc9c5a5a72bdccf3
                 <div id="tv" >
                     <div class="col-sm-12 col-sm-offset-4" id="form">
                         <div class="well" style="margin-top: 10%;">
@@ -132,28 +128,19 @@
                                         <div class="form-group col-sm-6"></div>
                                             
                                             <label>Sexe : </label>
-<<<<<<< HEAD
                                             
                                             
                                             <input type="radio"required name="sexe" value="Homme"> Homme <input required type="radio" name="sexe" value="Femme"> Femme
                                           
-=======
-                                            <input type="radio" required name="sexe" value="Homme"> Homme <input type="radio" required name="sexe" value="Femme"> Femme
->>>>>>> d21ecf1c933c5d57a0e047b9bc9c5a5a72bdccf3
                                         </div>
                                 </div>
                             <div class="row">
                                 
                                 <div class="form-group col-sm-6">
                                     <label for="name" class="h4" >Nom</label>
-<<<<<<< HEAD
                                     <input type="text" class="form-control" id="name" name="nom" placeholder="Entrez votre nom" required data-error="entrez votre nom">
                                      
                                    
-=======
-                                    <input type="text" class="form-control" id="name" name="nom" placeholder="Entrez votre nom" required data-error="">
-                                    <div class="help-block with-errors"></div>
->>>>>>> d21ecf1c933c5d57a0e047b9bc9c5a5a72bdccf3
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="prenom" class="h4" >Prénom</label>
