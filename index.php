@@ -161,32 +161,65 @@
 </html>
 
 <?php
+
 $nom="";
 $errorMSG = "";
-// NAME
+
+// sexe
+if (empty($_POST["sexe"])) {
+    $errorMSG .= "Veuillez entrer votre sexe ";
+} else {
+    $email = $_POST["sexe"];
+}
+
+// nom
 if (empty($_POST["nom"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "veuillez insérer votre nom";
 } else {
     $nom = $_POST["nom"];
 }
+// prenom
+if (empty($_POST["prenom"])) {
+    $errorMSG .= "Veuillez insérer votre prenom";
+} else {
+    $message = $_POST["prenom"];
+}
+
 // EMAIL
 if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
+    $errorMSG .= "Veuillez insérer votre email ";
 } else {
     $email = $_POST["email"];
 }
+
+// pays
+if (empty($_POST["pays"])) {
+    $errorMSG .= "Veuillez insérer votre pays ";
+} else {
+    $email = $_POST["pays"];
+}
+
 // MESSAGE
 if (empty($_POST["message"])) {
     $errorMSG .= "Message is required ";
 } else {
     $message = $_POST["message"];
 }
+
+
+
 $EmailTo = "quendepa@gmail.com";
 $Subject = "New Message Received";
 // prepare email body text
 $Body = "";
-$Body .= "Name: ";
+$Body .= "Nom: ";
 $Body .= $nom;
+$Body .= "\n";
+$Body .= "Prénom: ";
+$Body .= $prenom;
+$Body .= "\n";
+$Body .= "Pays: ";
+$Body .= $pays;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
