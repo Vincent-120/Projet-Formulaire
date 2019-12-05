@@ -231,6 +231,9 @@ $EmailTo = "quendepa@gmail.com";
 $Subject = "New Message Received";
 // prepare email body text
 $Body = "";
+$Body .= "Sujet: ";
+$Body .= $sujet;
+$Body .= "\n";
 $Body .= "Nom: ";
 $Body .= $nom;
 $Body .= "\n";
