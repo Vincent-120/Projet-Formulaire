@@ -113,7 +113,9 @@
                                         <div class="form-group col-sm-6"></div>
                                             
                                             <label>Sexe : </label>
-                                            <input type="radio" name="sexe"> Homme <input type="radio" name="sexe"> Femme
+                                            
+                                            <input type="radio" required name="sexe"> Homme <input type="radio" required name="sexe"> Femme
+                                            
                                           
                                         </div>
                                 </div>
@@ -122,9 +124,9 @@
                                 
                                 <div class="form-group col-sm-6">
                                     <label for="name" class="h4" >Nom</label>
-                                    <input type="text" class="form-control" id="name" name="nom" placeholder="Entrez votre nom" required data-error="NEW ERROR MESSAGE">
+                                    <input type="text" class="form-control" id="name" name="nom" placeholder="Entrez votre nom" required data-error="entrez votre nom">
                                      
-                                    <div class="help-block with-errors"></div>
+                                   
                                 </div>
                                 
                                 <div class="form-group col-sm-6">
