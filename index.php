@@ -20,9 +20,30 @@
 </header>
     <div id="acceuille" class="acceuille container-fluid"><!--Ici premiere partie de la page-->
         <div class="row">
-            <div class="titre col-sm-12 col-md-6 text-center order-2">
-                <h1 id="h1"></h1>
-                <p>We rasberry Py</p>
+            <div id="wrapper" class="titre col-sm-12 col-md-6 text-center order-2">
+    <h1>
+        <span id="title">
+            <span class="title-letter">H</span>
+            <span class="title-letter">a</span>
+            <span class="title-letter">c</span>
+            <span class="title-letter">k</span>
+            <span class="title-letter">e</span>
+            <span class="title-letter">u</span>
+            <span class="title-letter">r</span>
+            <span class="title-letter">s</span>
+            <span class="title-letter">&nbsp;</span>
+            <span class="title-letter">P</span>
+            <span class="title-letter">o</span>
+            <span class="title-letter">u</span>
+            <span class="title-letter">l</span>
+            <span class="title-letter">e</span>
+            <span class="title-letter">t</span>
+            <span class="title-letter">t</span>
+            <span class="title-letter">e</span>
+        </span>
+
+        <span id="sub-title">We Raspberry Pi</span>
+    </h1>
                 <img class="logo" class="img"src="Assets/img/hackers-poulette-logo.png" alt="logo,text,image">
             </div>
             <div class="who col-sm-12 col-md-3 text-center order-1">
@@ -93,6 +114,7 @@
                          
 
                 <h1>Formulaire de contacte :</h1>
+</div>
                 <div id="tv" >
                     <div class="col-sm-12 col-sm-offset-4" id="form">
                         <div class="well" style="margin-top: 10%;">
@@ -114,8 +136,8 @@
                                             
                                             <label>Sexe : </label>
                                             
-                                            <input type="radio" required name="sexe"> Homme <input type="radio" required name="sexe"> Femme
                                             
+                                            <input type="radio"required name="sexe" value="Homme"> Homme <input required type="radio" name="sexe" value="Femme"> Femme
                                           
                                         </div>
                                 </div>
@@ -130,8 +152,8 @@
                                 </div>
                                 
                                 <div class="form-group col-sm-6">
-                                        <label for="prénom" class="h4" >prénom</label>
-                                        <input type="text" name="prénom" class="form-control" id="prénom" placeholder="Entrez votre prénom" required data-error="NEW ERROR MESSAGE">
+                                        <label for="prenom" class="h4" >Prénom</label>
+                                        <input type="text" name="prenom" class="form-control" id="prenom" placeholder="Entrez votre prénom" required data-error="NEW ERROR MESSAGE">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 
@@ -142,7 +164,7 @@
                                 </div>
 
                                 <div class="form-group col-sm-6">
-                                        <label for="pays" class="h4" >pays</label>
+                                        <label for="pays" class="h4" >Pays</label>
                                         <input name="pays" type="text" class="form-control" id="pays" placeholder="pays" required>
                                         <div class="help-block with-errors"></div>
                                 </div>
@@ -176,9 +198,7 @@
 $nom="";
 $prenom="";
 $email="";
-
-
-$errorMSG = "";
+$errorMSG ="";
 // question
 if (empty($_POST["sujet"])) {
     $errorMSG .= "Veuillez entrer votre sexe ";
@@ -241,6 +261,9 @@ $Body .= $nom;
 $Body .= "\n";
 $Body .= "Prénom: ";
 $Body .= $prenom;
+$Body .= "\n";
+$Body .= "sexe: ";
+$Body .= $sexe;
 $Body .= "\n";
 $Body .= "Pays: ";
 $Body .= $pays;
