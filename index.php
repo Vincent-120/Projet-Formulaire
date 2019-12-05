@@ -90,12 +90,11 @@
                     <div class="col-sm-12 col-sm-offset-4">
                         <div class="well" style="margin-top: 10%;">
                         
-                        <form role="form" id="contactForm" data-toggle="validator" class="shake">
+                        <form role="form" id="contactForm" data-toggle="validator" class="shake" method="post" action="index.php">
                                 <div class="checkbox">
                                         <div class="form-group col-sm-6"></div>
-                                            <label for="genre" class="h4">sexe:</label>
-                                            <label class="checkbox-inline" class="form-control" id="homme" placeholder="check" required data-error="NEW ERROR MESSAGE"><input type="checkbox" value="homme">homme</label>
-                                            <label class="checkbox-inline" class="form-control" id="femme" placeholder="check" required data-error="NEW ERROR MESSAGE"><input type="checkbox" value="femme">femme</label>
+                                            
+                                            <label>Sexe : </label> <input type="radio" name="sexe"> Homme <input type="radio" name="sexe"> Femme
                                           
                                         </div>
                                 </div>
@@ -103,35 +102,36 @@
                             <div class="row">
                                 
                                 <div class="form-group col-sm-6">
-                                    <label for="name" class="h4">Nom</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Entrez votre nom" required data-error="NEW ERROR MESSAGE">
+                                    <label for="name" class="h4" >Nom</label>
+                                    <input type="text" class="form-control" id="name" name="nom" placeholder="Entrez votre nom" required data-error="NEW ERROR MESSAGE">
+                                     
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 
                                 <div class="form-group col-sm-6">
-                                        <label for="prénom" class="h4">prénom</label>
+                                        <label for="prénom" class="h4" name="prénom">prénom</label>
                                         <input type="text" class="form-control" id="prénom" placeholder="Entrez votre prénom" required data-error="NEW ERROR MESSAGE">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 
                                 <div class="form-group col-sm-6">
-                                    <label for="email" class="h4">Email</label>
+                                    <label for="email" class="h4" name="email">Email</label>
                                     <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse email" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-sm-6">
-                                        <label for="pays" class="h4">pays</label>
+                                        <label for="pays" class="h4" name="pays">pays</label>
                                         <input type="text" class="form-control" id="pays" placeholder="pays" required>
                                         <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="message" class="h4 ">Message</label>
+                                <label for="message" class="h4" name="message">Message</label>
                                 <textarea id="message" class="form-control" rows="5" placeholder="Entrez votre message" required></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+                            <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right " name="valide">Submit</button>
                             <div id="msgSubmit" class="h3 text-center hidden"></div>
                             <div class="clearfix"></div>
                         </div>
@@ -156,48 +156,37 @@
 </html>
 
 <?php
-$errorMSG = "";
-// NAME
-if (empty($_POST["name"])) {
-    $errorMSG = "Votre nom est requis";
-} else {
-    $name = $_POST["name"];
-}
-// EMAIL
-if (empty($_POST["email"])) {
-    $errorMSG .= "Votre email est requis ";
-} else {
-    $email = $_POST["email"];
-}
-// MESSAGE
-if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
-} else {
-    $message = $_POST["message"];
-}
-$EmailTo = "quendepa@gmail.com";
-$Subject = "New Message Received";
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $message;
-$Body .= "\n";
-// send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
-// redirect to success page
-if ($success && $errorMSG == ""){
-   echo "success";
-}else{
-    if($errorMSG == ""){
-        echo "Something went wrong :(";
-    } else {
-        echo $errorMSG;
+
+if(!empty($_POST)){
+    //
+    // Debug
+    //
+    echo '<pre>';
+    print_r($_POST);
+    echo '</pre><br />';
+
+    foreach($_POST as $field => $value){
+        echo '<b>'.$field.'</b> : '.$value.'<br />';
     }
+    echo '<br /><br />';
 }
+
+/*echo $_POST['nom'];
+$recupSexe = $_POST['sexe'];
+$recupNom = $_POST['nom'];
+$recupPréNom = $_POST['prénom'];
+$recupEmail = $_POST['email'];
+$recupPays = $_POST['pays'];
+$recupMessage = $_POST['message'];
+//radio 
+if(isset($recupSexe)){
+    $recupSexe = $_POST['sexe'];
+   }
+//nom
+if($recupNom != ""){ 
+}
+*/
+
+ 
+
 ?>
