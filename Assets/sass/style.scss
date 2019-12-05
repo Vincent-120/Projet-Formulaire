@@ -1,43 +1,4 @@
-body {
-    background-color: #fefefe;
-    color: #0d0d0d;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  h1 {
-      left: 50%;
-      margin: 0;
-      top: 50%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-  }
-  
-  #title {
-      font-weight: 700;
-      display: inline-flex;
-      margin: -5px;
-      padding: 5px;
-  } 
-  
-  .title-letter {
-      font-size: calc(6vw + 1rem);
-      margin-left: -2px;
-  }
-  
-  #sub-title {
-      font-weight: 400;
-      font-size: calc(0.4vw + 0.5rem);
-      letter-spacing: calc(0.3vw + 0.5rem);
-      text-transform: uppercase;
-      position: relative;
-      top: -5px;
-  }
-  
-  /* Opacity For Start */
-  .title-letter, #sub-title {
-    opacity: 0;   
-  }
+
 header{
     display: flex;
     justify-content: center;
@@ -68,7 +29,8 @@ header{
     padding-top: 10vw;
     padding-left: 5vw;
     a{
-        text-decoration: none;
+        color:black;
+        text-decoration: line;
     }
 }
 .info{
@@ -114,18 +76,18 @@ header{
     
     width: 900px;
     height: 650px;
-    background: white;
+    background-image: radial-gradient(circle, #15c5bd, #1dc8bb, #26cbb9, #2ecdb7, #36d0b5, #40d5c8, #50dad9, #65dfe7, #98e5fd, #c8ebff, #ebf3ff, #ffffff);
     border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
     box-shadow: 20px 20px rgba(0,0,0,.15);
     transition: all .4s ease;
     opacity: 80%;
     z-index: 1;
 }
-      #tv:hover {
-       border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
-       box-shadow: 20px 20x rgba(0,0,0,.25);
+#tv:hover {
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
+    box-shadow: 20px 20x rgba(0,0,0,.25);
     
-       }
+}
     
 .form{
     color: black;

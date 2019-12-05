@@ -107,62 +107,64 @@
     <!-- Ici ce trouve le formulaire-->
     <div class="container-fluid">
         <div class="row">
-       
            <div class="col-md-2 "></div>
-             <form id="contacte"method="post" action="index.php" class="formulaire col-md-10 col-sm-12 text-center align-item-center">
- 
-                         
-
+            <form id="contacte"method="post" action="index.php" class="formulaire col-md-10 col-sm-12 text-center align-item-center">
                 <h1>Formulaire de contacte :</h1>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d21ecf1c933c5d57a0e047b9bc9c5a5a72bdccf3
                 <div id="tv" >
                     <div class="col-sm-12 col-sm-offset-4" id="form">
                         <div class="well" style="margin-top: 10%;">
                         
                         
                         <form role="form" id="contactForm" data-toggle="validator" class="shake" method="post" action="index.php">
-                               
-                           <label for="sujet">Sujet du message</label><br />
-                           <div class="form-group col-sm-6"></div>
-                             <select name="sujet" id="le_nom">
-                                <option value="ta_valeur">J'ai une question concernant vos produits</option>
-                                <option value="ta_valeur">J'ai une question concernant votre site</option>
-                                <option value="ta_valeur">J'ai une question poour vous ennuyer</option>
-                               
-                             </select>
 
+                        <label for="sujet">Sujet du message</label><br />
+                        <div class="form-group col-sm-6"></div>
+                        <select name="sujet" id="le_nom">
+                                <option value="J'ai une question concernant vos produits">J'ai une question concernant vos produits</option>
+                                <option value="J'ai une question concernant votre site">J'ai une question concernant votre site</option>
+                                <option value="J'ai une question pour vous ennuyer">J'ai une question pour vous ennuyer</option>
+                        </select>
                                 <div class="checkbox">
                                         <div class="form-group col-sm-6"></div>
                                             
                                             <label>Sexe : </label>
+<<<<<<< HEAD
                                             
                                             
                                             <input type="radio"required name="sexe" value="Homme"> Homme <input required type="radio" name="sexe" value="Femme"> Femme
                                           
+=======
+                                            <input type="radio" required name="sexe" value="Homme"> Homme <input type="radio" required name="sexe" value="Femme"> Femme
+>>>>>>> d21ecf1c933c5d57a0e047b9bc9c5a5a72bdccf3
                                         </div>
                                 </div>
-
                             <div class="row">
                                 
                                 <div class="form-group col-sm-6">
                                     <label for="name" class="h4" >Nom</label>
+<<<<<<< HEAD
                                     <input type="text" class="form-control" id="name" name="nom" placeholder="Entrez votre nom" required data-error="entrez votre nom">
                                      
                                    
+=======
+                                    <input type="text" class="form-control" id="name" name="nom" placeholder="Entrez votre nom" required data-error="">
+                                    <div class="help-block with-errors"></div>
+>>>>>>> d21ecf1c933c5d57a0e047b9bc9c5a5a72bdccf3
                                 </div>
-                                
                                 <div class="form-group col-sm-6">
-                                        <label for="prenom" class="h4" >Prénom</label>
-                                        <input type="text" name="prenom" class="form-control" id="prenom" placeholder="Entrez votre prénom" required data-error="NEW ERROR MESSAGE">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                
+                                    <label for="prenom" class="h4" >Prénom</label>
+                                    <input type="text" name="prenom" class="form-control" id="prenom" placeholder="Entrez votre prénom" required data-error="NEW ERROR MESSAGE">
+                                    <div class="help-block with-errors"></div>
+                                </div>
                                 <div class="form-group col-sm-6">
                                     <label for="email" class="h4" >Email</label>
                                     <input type="email" name="email" class="form-control" id="email" placeholder="Entrez votre adresse email" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
-
                                 <div class="form-group col-sm-6">
                                         <label for="pays" class="h4" >Pays</label>
                                         <input name="pays" type="text" class="form-control" id="pays" placeholder="pays" required>
@@ -194,14 +196,11 @@
 </html>
 
 <?php
-
-$nom="";
-$prenom="";
 $email="";
 $errorMSG ="";
 // question
 if (empty($_POST["sujet"])) {
-    $errorMSG .= "Veuillez entrer votre sexe ";
+    $errorMSG .= "Veuillez entrer votre sexe dans le port usb ";
 } else {
     $sujet = $_POST["sujet"];
 }
@@ -250,11 +249,9 @@ if (empty($_POST["message"])) {
 
 
 $EmailTo = "quendepa@gmail.com";
-$Subject = "New Message Received";
+$Subject = $sujet;
 // prepare email body text
 $Body = "";
-$Body .= "Sujet: ";
-$Body .= $sujet;
 $Body .= "\n";
 $Body .= "Nom: ";
 $Body .= $nom;
