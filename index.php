@@ -114,7 +114,7 @@
                          
 
                 <h1>Formulaire de contacte :</h1>
-</div>
+
                 <div id="tv" >
                     <div class="col-sm-12 col-sm-offset-4" id="form">
                         <div class="well" style="margin-top: 10%;">
