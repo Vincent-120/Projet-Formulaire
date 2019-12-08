@@ -29,21 +29,9 @@
   padding-right: 15vw;
 }
 
-.box1 {
-  padding-top: 20vw;
-}
-
-.box1 .titre1 {
-  padding-bottom: 5vw;
-}
-
-.box1 .imgProduit img {
-  padding: 2vw;
-  height: 200px;
+#img {
   width: 200px;
-  background-color: white;
-  -webkit-box-shadow: black 10px 10px 5px;
-          box-shadow: black 10px 10px 5px;
+  height: 200px;
 }
 
 p {
