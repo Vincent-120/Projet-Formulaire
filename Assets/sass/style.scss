@@ -1,8 +1,23 @@
-//.acceuille premiere page !
-
-.titre{
-    padding-top:5vw;
+//!----------Navbar
+header{
+    display: flex;
+    justify-content: center;
+    height: 3vw;
+    nav{
+        display: flex;
+        background-color: #15c5bd;
+        width: 60%;
+        height: auto;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        a{
+            color: white;
+        }
+    }
 }
+//!--------page acceuille
+
 .produit{
     width: 150px;
     padding-top: 10vw;
@@ -13,31 +28,67 @@
     padding-top: 10vw;
     padding-left: 5vw;
     a{
-        text-decoration: none;
-        color: black;
-    }
-    .border{
-        border: 1px solid black;
-        background-color: #15c5bd;
+        color:black;
+        text-decoration: line;
     }
 }
 .info{
     padding-left: 15vw;
     padding-right: 15vw;
 }
-//?* partie de vente
-#img{
-    width: 200px;
+//!----------produit
+.box1{
+    padding-top: 20vw;
+}
+.titre1{
+    padding-bottom: 5vw;;
+}
+.imgProduit img{
+    padding-top: 3vw;
     height: 200px;
 }
-p{
-    padding-top: 2vw;
-    }
+//!---------Formulaire
 .formulaire{
     padding-top: 10vw;
 }
-@font-face {
-    font-family: "Open Sans";
-    src: url("/Projet-Formulaire/Assets/font/bellota/Bellota-Regular.otf") format("otf"),
-        url("/Projet-Formulaire/Assets/font/bellota-fontfacekit/web\ fonts/") format("svg");
+
+/*annimation du logo*/
+.logo{
+    position: relative;
+    animation-name: logo;
+    animation-duration: 2s;
+    
+
+
+    @-webkit-keyframes logo {
+        0%   { left:0px; top:-500px;}
+        100% { left:0px; top:0px;}
+    }
+
+    .logo:hover {
+        transform: scale(1.3);
+        transition: 0.1s;
+    }
+}
+//Formulaire
+#tv {
+    
+    
+    width: 900px;
+    height: 650px;
+    background-image: radial-gradient(circle, #15c5bd, #1dc8bb, #26cbb9, #2ecdb7, #36d0b5, #40d5c8, #50dad9, #65dfe7, #98e5fd, #c8ebff, #ebf3ff, #ffffff);
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+    opacity: 80%;
+    z-index: 1;
+}
+#tv:hover {
+    border-radius: 5% 5% 5% 5% / 5% 5% 5% 5% ;
+    box-shadow: 20px 20x rgba(0,0,0,.25);
+    
+}
+    
+.form{
+    color: black;
 }

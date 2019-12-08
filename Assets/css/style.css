@@ -1,5 +1,30 @@
-.titre {
-  padding-top: 5vw;
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3vw;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #15c5bd;
+  width: 60%;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a {
+  color: white;
 }
 
 .produit {
@@ -15,13 +40,9 @@
 }
 
 .who a {
-  text-decoration: none;
   color: black;
-}
-
-.who .border {
-  border: 1px solid black;
-  background-color: #15c5bd;
+  -webkit-text-decoration: line;
+          text-decoration: line;
 }
 
 .info {
@@ -29,21 +50,70 @@
   padding-right: 15vw;
 }
 
-#img {
-  width: 200px;
-  height: 200px;
+.box1 {
+  padding-top: 20vw;
 }
 
-p {
-  padding-top: 2vw;
+.titre1 {
+  padding-bottom: 5vw;
+}
+
+.imgProduit img {
+  padding-top: 3vw;
+  height: 200px;
 }
 
 .formulaire {
   padding-top: 10vw;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("/Projet-Formulaire/Assets/font/bellota/Bellota-Regular.otf") format("otf"), url("/Projet-Formulaire/Assets/font/bellota-fontfacekit/web fonts/") format("svg");
+/*annimation du logo*/
+.logo {
+  position: relative;
+  -webkit-animation-name: logo;
+          animation-name: logo;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    left: 0px;
+    top: -500px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.logo .logo:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#tv {
+  width: 900px;
+  height: 650px;
+  background-image: radial-gradient(circle, #15c5bd, #1dc8bb, #26cbb9, #2ecdb7, #36d0b5, #40d5c8, #50dad9, #65dfe7, #98e5fd, #c8ebff, #ebf3ff, #ffffff);
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  -webkit-box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  opacity: 80%;
+  z-index: 1;
+}
+
+#tv:hover {
+  border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+  -webkit-box-shadow: 20px 20x rgba(0, 0, 0, 0.25);
+          box-shadow: 20px 20x rgba(0, 0, 0, 0.25);
+}
+
+.form {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
