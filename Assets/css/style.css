@@ -50,17 +50,13 @@ header nav a {
   padding-right: 15vw;
 }
 
-.box1 {
-  padding-top: 20vw;
+.produit-header {
+  padding-top: 10vw;
 }
 
-.titre1 {
-  padding-bottom: 5vw;
-}
-
-.imgProduit img {
-  padding-top: 3vw;
+#img {
   height: 200px;
+  width: 200px;
 }
 
 .formulaire {

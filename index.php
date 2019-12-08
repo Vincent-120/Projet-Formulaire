@@ -44,71 +44,103 @@
         </div>
     </div>
     <!--ici ce trouve la deuxieme partie de la page-->
-      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <div class="pr-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 id="produit" class="display-4">Produits</h1>
       
-      <div class="container">
+    <div class="container">
         <div class="card-deck mb-3 text-center">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Raspberry Pi B</h4>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Raspberry Pi B</h4>
+                </div>
+                <div class="card-body">
+                    <img id="img" src="Assets/img/Raspberry_Pi_Model_B.jpg" alt="Raspberry Pi B">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>2 GB of storage</li>
+                        <li>empty</li>
+                        <li>empty</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">70€</button>
+                </div>
             </div>
-            <div class="card-body">
-              <ul class="list-unstyled mt-3 mb-4">
-                <img id="img" src="Assets/img/Raspberry_Pi_Model_B.jpg" alt="Raspberry Pi B">
-                <li>2 GB of storage</li>
-                <li>Email support</li>
-                <li>Help center access</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-outline-primary">70€</button>
-            </div>
-          </div>
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Raspberry PI B+</h4>
-            </div>
-            <div class="card-body">
-              <ul class="list-unstyled mt-3 mb-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Raspberry PI B+</h4>
+                </div>
+                <div class="card-body">
                     <img id="img" src="Assets/img/Raspberry_Pi_B+.jpg" alt="Raspberry PI B+">
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-outline-primary">110€</button>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>4 GB of storage</li>
+                        <li>empty</li>
+                        <li>empty</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">80€</button>
+                </div>
             </div>
-          </div>
-          <div class="card mb-4 shadow-sm">
+            <div class="card mb-4 shadow-sm">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Raspberry Pi 2</h4>
+                <h4 class="my-0 font-weight-normal">Raspberry Pi 2</h4>
             </div>
             <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
                     <img id="img" src="Assets/img/Raspberry_Pi_2.jpg" alt="Raspberry Pi 2">
-                    <li>15 GB of storage</li>
-                    <li>Phone and email support</li>
-                    <li>Help center access</li>
+                    <li>2 GB of storage</li>
+                    <li>empty</li>
+                    <li>empty</li>
+                </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">98€</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Raspberry Pi 3</h4>
+                </div>
+                <div class="card-body">
+                    <img id="img" src="Assets/img/Raspberry_Pi_3.JPG" alt="Raspberry Pi 3">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>2 GB of storage</li>
+                        <li>empty</li>
+                        <li>empty</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">110€</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Raspberry Pi 3B+</h4>
+                </div>
+                <div class="card-body">
+                <img id="img" src="Assets/img/Raspberry_Pi_3_b+.jpg" alt="Raspberry Pi 3B+">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>4 GB of storage</li>
+                        <li>empty</li>
+                        <li>empty</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">115€</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Raspberry Pi 4</h4>
+            </div>
+            <div class="card-body">
+                <img id="img" src="Assets/img/Raspberry_Pi_4.jpg" alt="Raspberry Pi 4">
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>2 GB of storage</li>
+                    <li>empty</li>
+                    <li>empty</li>
                 </ul>
             <button type="button" class="btn btn-lg btn-block btn-outline-primary">135€</button>
             </div>
         </div>
-        </div>
+    </div>
     <!-- <div class="box1 container-fluid"> 
         <div class="row">
 
-            <div id="produit" class="titre1 col-sm-12 col-md-12 text-center ">
-                <h1>Nos produits</h1>
-            </div>
-            <div id="item" class="imgProduit col-sm-12 col-md-4 text-center ">
-                <img src="Assets/img/Raspberry_Pi_Model_B.jpg" alt="Raspberry Pi B">
-                <p>Raspberry Pi B</p>
-            </div>
-            <div id="item" class="imgProduit col-sm-12 col-md-4 text-center ">
-                <img src="Assets/img/Raspberry_Pi_B+.jpg" alt="Raspberry PI B+">
-                <p>Raspberry Pi B+</p>
-            </div>
-            <div id="item" class="imgProduit col-sm-12 col-md-4 text-center ">
-                <img src="Assets/img/Raspberry_Pi_2.jpg" alt="Raspberry Pi 2">
-                <p>Raspberry Pi 2</p>
+            
             </div>
             <div id="item" class="imgProduit col-sm-12 col-md-4 text-center ">
                 <img src="Assets/img/Raspberry_Pi_3.JPG" alt="Raspberry Pi 3">
