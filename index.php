@@ -117,9 +117,9 @@
                         
                         <form role="form" id="contactForm" data-toggle="validator" class="shake" method="post" action="index.php">
 
-                        <label for="sujet">Sujet du message</label><br />
+                        <label for="sujet du message">Sujet du message</label><br />
                         <div class="form-group col-sm-6"></div>
-                        <select name="sujet" id="le_nom">
+                        <select name="sujet" id="sujet message">
                                 <option value="J'ai une question concernant vos produits">J'ai une question concernant vos produits</option>
                                 <option value="J'ai une question concernant votre site">J'ai une question concernant votre site</option>
                                 <option value="J'ai une question pour vous ennuyer">J'ai une question pour vous ennuyer</option>
@@ -127,18 +127,16 @@
                                 <div class="checkbox">
                                         <div class="form-group col-sm-6"></div>
                                             
-                                            <label>Sexe : </label>
-                                            
-                                            
-                                            <input type="radio"required name="sexe" value="Homme"> Homme <input required type="radio" name="sexe" value="Femme"> Femme
+                                            <label for="sexe">Sexe : </label>
+                                            <input type="radio"required name="sexe" value="Homme" id="homme"> Homme <input required type="radio" name="sexe" value="Femme" id="femme"> Femme
                                           
                                         </div>
                                 </div>
                             <div class="row">
                                 
                                 <div class="form-group col-sm-6">
-                                    <label for="name" class="h4" >Nom</label>
-                                    <input type="text" class="form-control" id="name" name="nom" placeholder="Entrez votre nom" required data-error="entrez votre nom">
+                                    <label for="nom" class="h4" >Nom</label>
+                                    <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez votre nom" required data-error="entrez votre nom">
                                      
                                    
                                 </div>
@@ -188,6 +186,7 @@ $errorMSG ="";
 // question
 if (empty($_POST["sujet"])) {
     $errorMSG .= "Veuillez entrer votre sexe dans le port usb ";
+    
 } else {
     $sujet = $_POST["sujet"];
 }
@@ -261,8 +260,8 @@ $Body .= "\n";
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
 // redirect to success page
-if ($success && $errorMSG == ""){
-   echo "success";
+if ($success == ""){
+    echo '<script>alert("Formulaire envoyé");</script>';
 }else{
     if($errorMSG == ""){
         echo "Something went wrong :(";
