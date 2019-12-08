@@ -18,7 +18,8 @@
 <a href="#contacte">Contacte</a>
 </nav>
 </header>
-    <div id="acceuille" class="acceuille container-fluid"><!--Ici premiere partie de la page-->
+<!--Ici premiere partie de la page-->
+    <div id="acceuille" class="acceuille container-fluid">
         <div class="row">
             <div id="wrapper" class="titre col-sm-12 col-md-6 text-center order-2">
     <h1>
@@ -47,20 +48,15 @@
                 <img class="logo" class="img"src="Assets/img/hackers-poulette-logo.png" alt="logo,text,image">
             </div>
             <div class="who col-sm-12 col-md-3 text-center order-1">
-                <div class="border">
-                    <h2>A propos</h2>
-                    <p><b>Hackers Poulette</b> est un site conçu pour les debutants, les fans et les veterans des rasberry ! Nous metons tout en oeuvre pour que nos client qui soit-il puisse obtenir ce nano-ordinateur et l'utiliser, le comprendre sur toute ses coutures. Nous offrons un commerce mondial afin que tout le monde ou qu'il soit puisse en obtenir un ! Fraichement née en 2017 <b>Hackers Poulette</b> ce lance dans la conquete du monde avec les Rasperry Pi avec ce nouveau site web.</p>
-                    <a href="#produit"> Alors n'hésiter plus et venez voir nos produit !</a>
-                </div>
+                <h2>A propos</h2>
+                <p><b>Hackers Poulette</b> est un site conçu pour les debutants, les fans et les veterans des rasberry ! Nous metons tout en oeuvre pour que nos client qui soit-il puisse obtenir ce nano-ordinateur et l'utiliser, le comprendre sur toute ses coutures. Nous offrons un commerce mondial afin que tout le monde ou qu'il soit puisse en obtenir un ! Fraichement née en 2017 <b>Hackers Poulette</b> ce lance dans la conquete du monde avec les Rasperry Pi avec ce nouveau site web.</p>
+                <a href="#produit"> Alors n'hésiter plus et venez voir nos produit !</a>
             </div>
             <div class="produit col-sm-12 col-md-3 text-center order-3">
-                <div class="border">
                     <h2>Produits</h2>
                     <p> Le Raspberry Pi est un nano-ordinateur monocarte à processeur ARM conçu par des professeurs du département informatique de l'université de Cambridge dans le cadre de la fondation Raspberry Pi2. Cet ordinateur, de la taille d'une carte de crédit, est destiné à encourager l'apprentissage de la programmation informatique2. Il permet l'exécution de plusieurs variantes du système d'exploitation libre GNU/Linux, notamment Debian, et des logiciels compatibles. Mais il fonctionne également avec Windows 10 IoT Core3 et celui de Google, Android Pi4.</p>
-                </div>
             </div>
             <div class="info col-sm-12 col-md-12 height-100px text-center order-4">
-                <div class="border">
                     <h2>Mais aussi !</h2>
                     <p>Afin de permettre a tous d'utiliser un Rasperry Pi nous avons fait appel a different associiation qui vous permettrons d'apprendre a utiliser un Rasperry Pi ! Et oui beaucoup de gens sont intérresser par ce nano-ordinateur, pourquoi ? car il permet différente chose, tres interressant les une des autres ! Mais nous n'allons pas vous retirer ce mystere héhé. Nous vous laissons pousser votre creativité sur ce petit objet. </p>
                     <ul>
@@ -68,7 +64,6 @@
                         <li><a href="https://coderdojo.com/fr-FR">Coder Dojo</a></li>
                         <li><a href="https://www.raspberrypi.org/jam/">Rasperry Jam</a></li>
                     </ul>
-                </div>
             </div>
         </div>
     </div>
@@ -109,7 +104,7 @@
         <div class="row">
            <div class="col-md-2 "></div>
             <form id="contacte"method="post" action="index.php" class="formulaire col-md-10 col-sm-12 text-center align-item-center">
-                <h1>Formulaire de contacte :</h1>
+                <h1 class="com-md-12 text-center">Formulaire de contacte :</h1>
                 <div id="tv" >
                     <div class="col-sm-12 col-sm-offset-4" id="form">
                         <div class="well" style="margin-top: 10%;">
@@ -234,7 +229,7 @@ if (empty($_POST["message"])) {
 
 
 
-$EmailTo = "quendepa@gmail.com";
+//$EmailTo = "quendepa@gmail.com";
 $Subject = $sujet;
 // prepare email body text
 $Body = "";

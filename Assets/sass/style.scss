@@ -1,4 +1,4 @@
-
+//!----------Navbar
 header{
     display: flex;
     justify-content: center;
@@ -16,9 +16,8 @@ header{
         }
     }
 }
-.titre{
-    padding-top:5vw;
-}
+//!--------page acceuille
+
 .produit{
     width: 150px;
     padding-top: 10vw;
@@ -37,6 +36,7 @@ header{
     padding-left: 15vw;
     padding-right: 15vw;
 }
+//!----------produit
 .box1{
     padding-top: 20vw;
 }
@@ -48,6 +48,7 @@ header{
     height: 200px;
     width: 150px;
 }
+//!---------Formulaire
 .formulaire{
     padding-top: 10vw;
 }
@@ -70,7 +71,7 @@ header{
         transition: 0.1s;
     }
 }
-
+//Formulaire
 #tv {
     
     
