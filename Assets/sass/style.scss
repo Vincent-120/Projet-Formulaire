@@ -4,8 +4,8 @@
     src: url("../font/Bellota-Regular-webfont.woff"),
     url("../font/Bellota-Bold-webfont.woff"), url("../font/Bellota-Italic-webfont.woff");
     }
-html{
-    font-family: 'Bellota-Regular.woff';
+body{
+    font-family: "bellota";
 }
 //!----------Navbar
 header{
@@ -29,11 +29,21 @@ header{
     }
 }
 //!--------page acceuille
+#fond{
+    background-image: url("../img/circuit.jpg");
+    background-size: cover;
+}
+.card-body1{
+    background-color: white;
+}
 .logo{
+    margin-top: 10vw;
     margin-right: auto;
     margin-left: auto;
     height: 350px;
     width: 400px;
+    background-image: radial-gradient(circle, #ffffff, #cbfbff);
+    border-radius: 100%;
 }
 .produit{
     width: 150px;
@@ -54,10 +64,16 @@ header{
 }
 
 //!----------produit
+.fond2{
+    margin-top: 25vw;
+    background-image: url('../img/circuit2.jpg');
+    background-size: cover;
+}
 #produit{
     margin-top: 100px;
 }
 .card-header{
+
     background-color: #15c5bd;
     color: white ;
     border-radius: 50%;
@@ -67,6 +83,13 @@ header{
     width: 200px;
 }
 //!---------Formulaire
+.fond3{
+    background-image: url("../img/circuit3.jpg");
+    background-size: cover;
+    margin-top: 25vw;
+    margin-bottom: 25vw;
+    padding-bottom: 5vw;;
+}
 .formulaire{
     padding-top: 10vw;
 }
@@ -92,7 +115,8 @@ header{
 //Formulaire
 #tv {
     
-    
+    margin-left: auto;
+    margin-right: auto;
     width: 900px;
     height: 650px;
     background-image: radial-gradient(circle, #15c5bd, #1dc8bb, #26cbb9, #2ecdb7, #36d0b5, #40d5c8, #50dad9, #65dfe7, #98e5fd, #c8ebff, #ebf3ff, #ffffff);
