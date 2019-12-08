@@ -1,13 +1,25 @@
+//!----------Font
+@font-face {
+    font-family: "bellota";
+    src: url("../font/Bellota-Regular-webfont.woff"),
+    url("../font/Bellota-Bold-webfont.woff"), url("../font/Bellota-Italic-webfont.woff");
+    }
+html{
+    font-family: 'Bellota-Regular.woff';
+}
 //!----------Navbar
 header{
     display: flex;
     justify-content: center;
+    
     height: 3vw;
     nav{
+        margin-top: 1px;
+        position: relative;
         display: flex;
         background-color: #15c5bd;
-        width: 60%;
-        height: auto;
+        width: 100%;
+        height: 100%;
         justify-content: space-around;
         text-align: center;
         align-items: center;
@@ -17,36 +29,42 @@ header{
     }
 }
 //!--------page acceuille
-
+.logo{
+    margin-right: auto;
+    margin-left: auto;
+    height: 350px;
+    width: 400px;
+}
 .produit{
     width: 150px;
-    padding-top: 10vw;
-    padding-right: 5vw;
+    margin-top: 10vw;
+    margin-right: 2vw;
 }
 .who{
     width: 150px;
-    padding-top: 10vw;
-    padding-left: 5vw;
+    margin-top: 10vw;
+    margin-left: 2vw;
     a{
         color:black;
         text-decoration: line;
     }
 }
 .info{
-    padding-left: 15vw;
-    padding-right: 15vw;
+    margin-top: 10px;
 }
+
 //!----------produit
-.box1{
-    padding-top: 20vw;
+#produit{
+    margin-top: 100px;
 }
-.titre1{
-    padding-bottom: 5vw;;
+.card-header{
+    background-color: #15c5bd;
+    color: white ;
+    border-radius: 50%;
 }
-.imgProduit img{
-    padding-top: 3vw;
+#img{
     height: 200px;
-    width: 150px;
+    width: 200px;
 }
 //!---------Formulaire
 .formulaire{

@@ -21,7 +21,7 @@
 <!--Ici premiere partie de la page-->
     <div id="acceuille" class="acceuille container-fluid">
         <div class="row">
-            <div id="wrapper" class="titre col-sm-12 col-md-6 text-center order-2">
+            <div id="wrapper" class="titre col-sm-12 col-md-5 text-center order-2">
     <h1>
         <span id="title">
             <span class="title-letter">H</span>
@@ -47,55 +47,128 @@
     </h1>
                 <img class="logo" class="img"src="Assets/img/hackers-poulette-logo.png" alt="logo,text,image">
             </div>
-            <div class="who col-sm-12 col-md-3 text-center order-1">
-                <h2>A propos</h2>
-                <p><b>Hackers Poulette</b> est un site conçu pour les debutants, les fans et les veterans des rasberry ! Nous metons tout en oeuvre pour que nos client qui soit-il puisse obtenir ce nano-ordinateur et l'utiliser, le comprendre sur toute ses coutures. Nous offrons un commerce mondial afin que tout le monde ou qu'il soit puisse en obtenir un ! Fraichement née en 2017 <b>Hackers Poulette</b> ce lance dans la conquete du monde avec les Rasperry Pi avec ce nouveau site web.</p>
-                <a href="#produit"> Alors n'hésiter plus et venez voir nos produit !</a>
+            <div class="who col-sm-12 col-md-3 text-center shadow-lg">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">A propos</h4>
+                </div>
+                <div class="card-body">
+                    <p><b>Hackers Poulette</b> est un site conçu pour les debutants, les fans et les veterans des rasberry ! Nous metons tout en oeuvre pour que nos client qui soit-il puisse obtenir ce nano-ordinateur et l'utiliser, le comprendre sur toute ses coutures. Nous offrons un commerce mondial afin que tout le monde ou qu'il soit puisse en obtenir un ! Fraichement née en 2017 <b>Hackers Poulette</b> ce lance dans la conquete du monde avec les Rasperry Pi avec ce nouveau site web.</p>
+                    <a href="#produit"> Alors n'hésiter plus et venez voir nos produit !</a>
+                </div>
             </div>
-            <div class="produit col-sm-12 col-md-3 text-center order-3">
-                    <h2>Produits</h2>
+            <div class="produit col-sm-12 col-md-3 text-center order-3 shadow-lg">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Produits</h4>
+                </div>
+                <div class="card-body">
                     <p> Le Raspberry Pi est un nano-ordinateur monocarte à processeur ARM conçu par des professeurs du département informatique de l'université de Cambridge dans le cadre de la fondation Raspberry Pi2. Cet ordinateur, de la taille d'une carte de crédit, est destiné à encourager l'apprentissage de la programmation informatique2. Il permet l'exécution de plusieurs variantes du système d'exploitation libre GNU/Linux, notamment Debian, et des logiciels compatibles. Mais il fonctionne également avec Windows 10 IoT Core3 et celui de Google, Android Pi4.</p>
+                </div>
             </div>
-            <div class="info col-sm-12 col-md-12 height-100px text-center order-4">
-                    <h2>Mais aussi !</h2>
+            <div class="info col-sm-12 col-md-12 text-center order-4 shadow-lg">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Mais aussi !</h4>
+                </div>
+                <div class="card-body">
                     <p>Afin de permettre a tous d'utiliser un Rasperry Pi nous avons fait appel a different associiation qui vous permettrons d'apprendre a utiliser un Rasperry Pi ! Et oui beaucoup de gens sont intérresser par ce nano-ordinateur, pourquoi ? car il permet différente chose, tres interressant les une des autres ! Mais nous n'allons pas vous retirer ce mystere héhé. Nous vous laissons pousser votre creativité sur ce petit objet. </p>
-                    <ul>
+                    <ul class="list-unstyled mt-3 mb-4">
                         <li><a href="https://codeclub.org/en/">Code Club</a></li>
                         <li><a href="https://coderdojo.com/fr-FR">Coder Dojo</a></li>
                         <li><a href="https://www.raspberrypi.org/jam/">Rasperry Jam</a></li>
                     </ul>
+                </div>
             </div>
         </div>
     </div>
-    <div class="box1 container-fluid"> <!--ici ce trouve la deuxieme partie de la page-->
-        <div class="row">
-
-            <div id="produit" class="titre1 col-sm-12 col-md-12 text-center text-light">
-                <h1>Nos produits</h1>
+    <!--ici ce trouve la deuxieme partie de la page-->
+    <div class="pr-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 id="produit" class="display-4">Produits</h1>
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Raspberry Pi B</h4>
+                </div>
+                <div class="card-body">
+                    <img id="img" src="Assets/img/Raspberry_Pi_Model_B.jpg" alt="Raspberry Pi B">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>2 GB of storage</li>
+                        <li>empty</li>
+                        <li>empty</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">70€</button>
+                </div>
             </div>
-            <div id="item" class="imgProduit col-sm-12 col-md-4 text-center text-light">
-                <img src="Assets/img/Raspberry_Pi_Model_B.jpg" alt="Raspberry Pi B">
-                <p>Raspberry Pi B</p>
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Raspberry PI B+</h4>
+                </div>
+                <div class="card-body">
+                    <img id="img" src="Assets/img/Raspberry_Pi_B+.jpg" alt="Raspberry PI B+">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>4 GB of storage</li>
+                        <li>empty</li>
+                        <li>empty</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">80€</button>
+                </div>
             </div>
-            <div id="item" class="imgProduit col-sm-12 col-md-4 text-center text-light">
-                <img src="Assets/img/Raspberry_Pi_B+.jpg" alt="Raspberry PI B+">
-                <p>Raspberry Pi B+</p>
+            <div class="card mb-4 shadow-lg">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Raspberry Pi 2</h4>
             </div>
-            <div id="item" class="imgProduit col-sm-12 col-md-4 text-center text-light">
-                <img src="Assets/img/Raspberry_Pi_2.jpg" alt="Raspberry Pi 2">
-                <p>Raspberry Pi 2</p>
+            <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                    <img id="img" src="Assets/img/Raspberry_Pi_2.jpg" alt="Raspberry Pi 2">
+                    <li>2 GB of storage</li>
+                    <li>empty</li>
+                    <li>empty</li>
+                </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">98€</button>
             </div>
-            <div id="item" class="imgProduit col-sm-12 col-md-4 text-center text-light">
-                <img src="Assets/img/Raspberry_Pi_3.JPG" alt="Raspberry Pi 3">
-                <p>Raspberry Pi 3</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Raspberry Pi 3</h4>
+                </div>
+                <div class="card-body">
+                    <img id="img" src="Assets/img/Raspberry_Pi_3.JPG" alt="Raspberry Pi 3">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>2 GB of storage</li>
+                        <li>empty</li>
+                        <li>empty</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">110€</button>
+                </div>
             </div>
-            <div id="item" class="imgProduit col-sm-12 col-md-4 text-center text-light">
-                <img src="Assets/img/Raspberry_Pi_3_b+.jpg" alt="Raspberry Pi 3B+">
-                <p>Raspberry Pi 3 B+</p>
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Raspberry Pi 3B+</h4>
+                </div>
+                <div class="card-body">
+                <img id="img" src="Assets/img/Raspberry_Pi_3_b+.jpg" alt="Raspberry Pi 3B+">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>4 GB of storage</li>
+                        <li>empty</li>
+                        <li>empty</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">115€</button>
+                </div>
             </div>
-            <div id="item" class="imgProduit col-sm-12 col-md-4 text-center text-light">
-                <img src="Assets/img/Raspberry_Pi_4.jpg" alt="Raspberry Pi 4">
-                <p>Raspberry Pi 4</p>
+            <div class="card mb-4 shadow-lg">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Raspberry Pi 4</h4>
+            </div>
+            <div class="card-body">
+                <img id="img" src="Assets/img/Raspberry_Pi_4.jpg" alt="Raspberry Pi 4">
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>2 GB of storage</li>
+                    <li>empty</li>
+                    <li>empty</li>
+                </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">135€</button>
             </div>
         </div>
     </div>
