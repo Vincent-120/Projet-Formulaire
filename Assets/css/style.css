@@ -112,6 +112,12 @@ header nav a {
   padding-top: 10vw;
 }
 
+#honey {
+  position: absolute;
+  display: none;
+  z-index: -1;
+}
+
 /*annimation du logo*/
 .logo {
   position: relative;

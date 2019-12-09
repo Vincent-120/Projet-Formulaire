@@ -13,9 +13,9 @@
 <body>
 <header>
 <nav>
-<a href="#produit"> Produits</a>
-<a href="#acceuille">Acceuille</a>
-<a href="#contacte">Contacte</a>
+<a href="#produit"><b>Produits</b></a>
+<a href="#acceuille"><b>Acceuille</b></a>
+<a href="#contacte"><b>Contacte</b></a>
 </nav>
 </header>
 <!--?*Ici premiere partie de la page-->
@@ -169,7 +169,7 @@
                         
                         <form role="form" id="contactForm" data-toggle="validator" class="shake" method="post" action="index.php">
 
-                        <label for="sujet du message">Sujet du message</label><br />
+                        <label for="sujet du message"><b>Sujet du message</b></label><br />
                         <div class="form-group col-sm-6"></div>
                         <select name="sujet" id="sujet message">
                                 <option value="J'ai une question concernant vos produits">J'ai une question concernant vos produits</option>
@@ -181,7 +181,6 @@
                                             
                                             <label for="sexe">Sexe : </label>
                                             <input type="radio"required name="sexe" value="Homme" id="homme"> Homme <input required type="radio" name="sexe" value="Femme" id="femme"> Femme
-                                          
                                         </div>
                                 </div>
                             <div class="row">
@@ -189,8 +188,6 @@
                                 <div class="form-group col-sm-6">
                                     <label for="nom" class="h4" >Nom</label>
                                     <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez votre nom" required data-error="entrez votre nom">
-                                     
-                                   
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="prenom" class="h4" >Prénom</label>
@@ -216,6 +213,10 @@
                             <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right " name="valide">Submit</button>
                             <div id="msgSubmit" class="h3 text-center hidden"></div>
                             <div class="clearfix"></div>
+                            <div class="form-group" id="honey">
+                                <label> non </label>
+                                <intput type="text" name="honey" class="form"/>
+                            </div>
                         </div>
                         </form>
                         
@@ -233,92 +234,97 @@
 </html>
 
 <?php
+$honey = $_POST['honey'];
 $email="";
 $errorMSG ="";
 // question
-if (empty($_POST["sujet"])) {
-    $errorMSG .= "Veuillez entrer votre sexe dans le port usb ";
+if($honey){
+    $error = "You are a robot.";
+    }
+    else{
+        if (empty($_POST["sujet"])) {
+            $errorMSG .= "Veuillez entrer votre sexe dans le port usb ";
     
-} else {
-    $sujet = $_POST["sujet"];
-}
+        } else {
+            $sujet = $_POST["sujet"];
+        }
 
-// sexe
-if (empty($_POST["sexe"])) {
-    $errorMSG .= "Veuillez entrer votre sexe ";
-} else {
-    $sexe = $_POST["sexe"];
-}
-
-// nom
-if (empty($_POST["nom"])) {
-    $errorMSG = "veuillez insérer votre nom";
-} else {
-    $nom = $_POST["nom"];
-}
-// prenom
-if (empty($_POST["prenom"])) {
-    $errorMSG .= "Veuillez insérer votre prenom";
-} else {
-    $prenom = $_POST["prenom"];
-}
-
-// EMAIL
-if (empty($_POST["email"])) {
-    $errorMSG .= "Veuillez insérer votre email ";
-} else {
-    $email = $_POST["email"];
-}
-
-// pays
-if (empty($_POST["pays"])) {
-    $errorMSG .= "Veuillez insérer votre pays ";
-} else {
-    $pays = $_POST["pays"];
-}
-
-// MESSAGE
-if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
-} else {
-    $message = $_POST["message"];
-}
-
-
-
-//$EmailTo = "quendepa@gmail.com";
-$Subject = $sujet;
-// prepare email body text
-$Body = "";
-$Body .= "\n";
-$Body .= "Nom: ";
-$Body .= $nom;
-$Body .= "\n";
-$Body .= "Prénom: ";
-$Body .= $prenom;
-$Body .= "\n";
-$Body .= "sexe: ";
-$Body .= $sexe;
-$Body .= "\n";
-$Body .= "Pays: ";
-$Body .= $pays;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $message;
-$Body .= "\n";
-// send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
-// redirect to success page
-if ($success == ""){
-    echo '<script>alert("Formulaire envoyé");</script>';
-}else{
-    if($errorMSG == ""){
-        echo "Something went wrong :(";
+    // sexe
+    if (empty($_POST["sexe"])) {
+        $errorMSG .= "Veuillez entrer votre sexe ";
     } else {
-        echo $errorMSG;
+    $sexe = $_POST["sexe"];
+    }
+
+    // nom
+    if (empty($_POST["nom"])) {
+        $errorMSG = "veuillez insérer votre nom";
+    } else {
+        $nom = $_POST["nom"];
+    }
+    // prenom
+    if (empty($_POST["prenom"])) {
+        $errorMSG .= "Veuillez insérer votre prenom";
+    } else {
+        $prenom = $_POST["prenom"];
+    }
+
+    // EMAIL
+    if (empty($_POST["email"])) {
+        $errorMSG .= "Veuillez insérer votre email ";
+    } else {
+        $email = $_POST["email"];
+    }
+    // pays
+    if (empty($_POST["pays"])) {
+        $errorMSG .= "Veuillez insérer votre pays ";
+    } else {
+        $pays = $_POST["pays"];
+    }
+
+    // MESSAGE
+    if (empty($_POST["message"])) {
+        $errorMSG .= "Message is required ";
+    } else {
+        $message = $_POST["message"];
+    }
+
+
+
+    $EmailTo = "quendepa@gmail.com";
+    $Subject = $sujet;
+    // prepare email body text
+    $Body = "";
+    $Body .= "\n";
+    $Body .= "Nom: ";
+    $Body .= $nom;
+    $Body .= "\n";
+    $Body .= "Prénom: ";
+    $Body .= $prenom;
+    $Body .= "\n";
+    $Body .= "sexe: ";
+    $Body .= $sexe;
+    $Body .= "\n";
+    $Body .= "Pays: ";
+    $Body .= $pays;
+    $Body .= "\n";
+    $Body .= "Email: ";
+    $Body .= $email;
+    $Body .= "\n";
+    $Body .= "Message: ";
+    $Body .= $message;
+    $Body .= "\n";
+    // send email
+    $success = mail($EmailTo, $Subject, $Body, "From:".$email);
+    // redirect to success page
+    if ($success == ""){
+        echo '<script>alert("Formulaire envoyé");</script>';
+    }else{
+        if($errorMSG == ""){
+            echo "Something went wrong :(";
+        } else {
+            echo $errorMSG;
+        }
     }
 }
 ?>
