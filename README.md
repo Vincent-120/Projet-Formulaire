@@ -91,4 +91,4 @@ Tous les champs sont obligatoires, sauf le sujet (dans ce cas, valeur = "Autre")
 - Mettre un bar pour introduire l'email permettant de recevoir les actualiter dans ca boite
 
 #here you can tcheck this site
--  https://vincent-120.github.io/Projet-Formulaire/. 
+-  https://vincent-120.github.io/Projet-Formulaire/
